@@ -19,19 +19,19 @@
   },
   "types": {
     "int": {
-      "class": "java.lang.Integer",
+      "class": "Integer",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "string": {
-      "class": "java.lang.String"
+      "class": "String"
     },
     "true": {
-      "class": "java.lang.Boolean",
+      "class": "Boolean",
       "validateFunctions": [
         {
-            "class": "uk.gov.gchq.koryphe.impl.predicate.IsTrue"
+            "class": "IsTrue"
         }
       ]
     }

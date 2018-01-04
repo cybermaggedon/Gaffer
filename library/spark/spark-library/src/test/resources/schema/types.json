@@ -1,67 +1,67 @@
 {
   "types": {
     "string": {
-      "class": "java.lang.String"
+      "class": "String"
     },
     "int": {
-      "class": "java.lang.Integer",
+      "class": "Integer",
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.JavaSerialiser"
+        "class": "JavaSerialiser"
       },
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "float": {
-      "class": "java.lang.Float",
+      "class": "Float",
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.JavaSerialiser"
+        "class": "JavaSerialiser"
       },
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "double": {
-      "class": "java.lang.Double",
+      "class": "Double",
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.JavaSerialiser"
+        "class": "JavaSerialiser"
       },
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "long": {
-      "class": "java.lang.Long",
+      "class": "Long",
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.JavaSerialiser"
+        "class": "JavaSerialiser"
       },
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "directed.either": {
-      "class": "java.lang.Boolean"
+      "class": "Boolean"
     },
     "simpleProperty": {
-      "class": "java.lang.Integer",
+      "class": "Integer",
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.JavaSerialiser"
+        "class": "JavaSerialiser"
       },
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "colQualProperty": {
-      "class": "java.lang.Integer",
+      "class": "Integer",
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.JavaSerialiser"
+        "class": "JavaSerialiser"
       },
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "freqMapProperty": {
-      "class": "uk.gov.gchq.gaffer.types.FreqMap"
+      "class": "FreqMap"
     },
     "hyperLogLogPlus": {
       "class": "com.clearspring.analytics.stream.cardinality.HyperLogLogPlus"

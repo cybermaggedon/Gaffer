@@ -1,37 +1,37 @@
 {
   "types": {
     "vertex.long": {
-      "class": "java.lang.Long"
+      "class": "Long"
     },
     "directed.either": {
-      "class": "java.lang.Boolean"
+      "class": "Boolean"
     },
     "simpleByteProperty": {
-      "class": "java.lang.Byte"
+      "class": "Byte"
     },
     "simpleDoubleProperty": {
-      "class": "java.lang.Double"
+      "class": "Double"
     },
     "simpleFloatProperty": {
-      "class": "java.lang.Float"
+      "class": "Float"
     },
     "simpleIntProperty": {
-      "class": "java.lang.Integer"
+      "class": "Integer"
     },
     "treeSet": {
-      "class": "java.util.TreeSet"
+      "class": "TreeSet"
     },
     "freqMap": {
-      "class": "uk.gov.gchq.gaffer.types.FreqMap"
+      "class": "FreqMap"
     },
     "simpleLongProperty": {
-      "class": "java.lang.Long"
+      "class": "Long"
     },
     "simpleShortProperty": {
-      "class": "java.lang.Short"
+      "class": "Short"
     },
     "simpleDateProperty": {
-      "class": "java.util.Date"
+      "class": "Date"
     }
   }
 }

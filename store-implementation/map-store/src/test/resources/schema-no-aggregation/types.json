@@ -1,21 +1,21 @@
 {
   "types": {
     "vertex.string": {
-      "class": "java.lang.String"
+      "class": "String"
     },
     "directed.either": {
-      "class": "java.lang.Boolean"
+      "class": "Boolean"
     },
     "string": {
-      "class": "java.lang.String",
+      "class": "String",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.StringConcat"
+        "class": "StringConcat"
       }
     },
     "int": {
-      "class": "java.lang.Integer",
+      "class": "Integer",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     }
   }

@@ -2,53 +2,53 @@
   "types": {
     "simpleByteProperty": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Max"
+        "class": "Max"
       }
     },
     "simpleDoubleProperty": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "simpleIntProperty": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "simpleFloatProperty": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "treeSet": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.CollectionConcat"
+        "class": "CollectionConcat"
       }
     },
     "freqMap": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.gaffer.types.function.FreqMapAggregator"
+        "class": "FreqMapAggregator"
       }
     },
     "simpleLongProperty": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "simpleShortProperty": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       }
     },
     "simpleDateProperty": {
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Max"
+        "class": "Max"
       }
     },
     "visibility": {
-      "class": "java.lang.String",
+      "class": "String",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.StringConcat"
+        "class": "StringConcat"
       }
     }
   }

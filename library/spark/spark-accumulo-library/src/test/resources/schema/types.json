@@ -1,41 +1,41 @@
 {
   "types": {
     "vertex.string": {
-      "class": "java.lang.String"
+      "class": "String"
     },
     "directed.either": {
-      "class": "java.lang.Boolean"
+      "class": "Boolean"
     },
     "simpleProperty": {
-      "class": "java.lang.Integer",
+      "class": "Integer",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       },
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.raw.CompactRawIntegerSerialiser"
+        "class": "CompactRawIntegerSerialiser"
       }
     },
     "colQualProperty": {
-      "class": "java.lang.Integer",
+      "class": "Integer",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.Sum"
+        "class": "Sum"
       },
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.raw.RawIntegerSerialiser"
+        "class": "RawIntegerSerialiser"
       }
     },
     "timestamp": {
-      "class": "java.lang.Integer"
+      "class": "Integer"
     },
     "string": {
-      "class": "java.lang.String",
+      "class": "String",
       "validateFunctions": [
         {
-          "class": "uk.gov.gchq.koryphe.impl.predicate.Exists"
+          "class": "Exists"
         }
       ],
       "aggregateFunction": {
-        "class": "uk.gov.gchq.koryphe.impl.binaryoperator.StringConcat"
+        "class": "StringConcat"
       }
     }
   }

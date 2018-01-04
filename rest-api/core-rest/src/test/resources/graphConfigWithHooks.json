@@ -4,10 +4,10 @@
     {
       "class": "uk.gov.gchq.gaffer.graph.hook.OperationChainLimiter",
       "opScores": {
-        "uk.gov.gchq.gaffer.operation.Operation": 1,
-        "uk.gov.gchq.gaffer.operation.impl.add.AddElements": 2,
-        "uk.gov.gchq.gaffer.operation.impl.get.GetAllElements": 5,
-        "uk.gov.gchq.gaffer.operation.impl.generate.GenerateObjects": 0
+        "Operation": 1,
+        "AddElements": 2,
+        "GetAllElements": 5,
+        "GenerateObjects": 0
       },
       "authScores": {
         "User": 2,
@@ -18,13 +18,13 @@
       "class": "uk.gov.gchq.gaffer.graph.hook.AddOperationsToChain",
       "end": [
         {
-          "class": "uk.gov.gchq.gaffer.operation.impl.Count"
+          "class": "Count"
         }
       ],
       "after": {
-        "uk.gov.gchq.gaffer.operation.impl.get.GetAllElements": [
+        "GetAllElements": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit"
+            "class": "Limit"
           }
         ]
       }
@@ -32,19 +32,19 @@
     {
       "class": "uk.gov.gchq.gaffer.graph.hook.OperationAuthoriser",
       "auths": {
-        "uk.gov.gchq.gaffer.operation.Operation": [
+        "Operation": [
           "User"
         ],
-        "uk.gov.gchq.gaffer.operation.io.Output": [
+        "Output": [
           "ReadUser"
         ],
-        "uk.gov.gchq.gaffer.operation.impl.add.AddElements": [
+        "AddElements": [
           "WriteUser"
         ],
-        "uk.gov.gchq.gaffer.operation.impl.get.GetAdjacentIds": [
+        "GetAdjacentIds": [
           "SuperUser"
         ],
-        "uk.gov.gchq.gaffer.operation.impl.get.GetAllElements": [
+        "GetAllElements": [
           "AdminUser",
           "SuperUser"
         ]

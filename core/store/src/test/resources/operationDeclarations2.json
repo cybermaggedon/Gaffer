@@ -1,7 +1,7 @@
 {
   "operations": [
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.generate.GenerateObjects",
+      "operation": "GenerateObjects",
       "handler": {
         "class": "uk.gov.gchq.gaffer.store.operation.handler.generate.GenerateObjectsHandler"
       }

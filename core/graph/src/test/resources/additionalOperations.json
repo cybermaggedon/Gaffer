@@ -1,44 +1,44 @@
 {
   "start": [
     {
-      "class": "uk.gov.gchq.gaffer.operation.impl.DiscardOutput"
+      "class": "DiscardOutput"
     },
     {
-      "class": "uk.gov.gchq.gaffer.operation.impl.SplitStore"
+      "class": "SplitStore"
     }
   ],
   "end": [
     {
-      "class": "uk.gov.gchq.gaffer.operation.impl.Count"
+      "class": "Count"
     }
   ],
   "before": {
-    "uk.gov.gchq.gaffer.operation.impl.get.GetAdjacentIds": [
+    "GetAdjacentIds": [
       {
-        "class": "uk.gov.gchq.gaffer.operation.impl.Validate"
+        "class": "Validate"
       }
     ],
-    "uk.gov.gchq.gaffer.operation.impl.get.GetElements": [
+    "GetElements": [
       {
-        "class": "uk.gov.gchq.gaffer.operation.impl.CountGroups"
+        "class": "CountGroups"
       }
     ]
   },
   "after": {
-    "uk.gov.gchq.gaffer.operation.impl.get.GetAllElements": [
+    "GetAllElements": [
       {
-        "class": "uk.gov.gchq.gaffer.operation.impl.Limit"
+        "class": "Limit"
       },
       {
-        "class": "uk.gov.gchq.gaffer.operation.impl.Validate"
+        "class": "Validate"
       }
     ],
-    "uk.gov.gchq.gaffer.operation.impl.get.GetAdjacentIds": [
+    "GetAdjacentIds": [
       {
-        "class": "uk.gov.gchq.gaffer.operation.impl.Count"
+        "class": "Count"
       },
       {
-        "class": "uk.gov.gchq.gaffer.operation.impl.DiscardOutput"
+        "class": "DiscardOutput"
       }
     ]
   }
