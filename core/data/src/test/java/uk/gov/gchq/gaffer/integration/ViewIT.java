@@ -27,47 +27,6 @@ import static org.junit.Assert.assertEquals;
 
 
 public class ViewIT {
-//    @Test
-//    public void shouldDeserialiseJsonView() throws IOException {
-//        // Given
-//
-//        // When
-//        View view = loadView();
-//
-//        // Then
-//        final ViewElementDefinition edge = view.getEdge(TestGroups.EDGE);
-//        final ElementTransformer transformer = edge.getTransformer();
-//        assertNotNull(transformer);
-//
-//        final List<Function> contexts = transformer.getFunctions();
-//        assertEquals(1, contexts.size());
-//
-//        final List<String> selection = contexts.get(0).getSelection();
-//        assertEquals(2, selection.size());
-//        assertEquals(TestPropertyNames.PROP_1, selection.get(0));
-//        assertEquals(IdentifierType.SOURCE.name(), selection.get(1));
-//
-//        final List<String> projection = contexts.get(0).getProjection();
-//        assertEquals(1, projection.size());
-//        assertEquals(TestPropertyNames.TRANSIENT_1, projection.get(0));
-//
-//        assertTrue(contexts.get(0).getPredicate() instanceof ExampleTransformFunction);
-//
-//        final ElementFilter postFilter = edge.getPostTransformFilter();
-//        assertNotNull(postFilter);
-//
-//        final List<ConsumerFunctionContext<String, Predicate>> filterContexts = postFilter.getFunctions();
-//        assertEquals(1, contexts.size());
-//
-//        final List<String> postFilterSelection = filterContexts.get(0).getSelection();
-//        assertEquals(1, postFilterSelection.size());
-//        assertEquals(TestPropertyNames.TRANSIENT_1, postFilterSelection.get(0));
-//
-//        assertTrue(filterContexts.get(0).getPredicate() instanceof ExampleFilterFunction);
-//
-//
-//    }
-
     @Test
     public void shouldDeserialiseAndReserialiseIntoTheSameJson() throws IOException {
         //Given
