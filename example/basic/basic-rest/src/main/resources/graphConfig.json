@@ -4,53 +4,53 @@
     {
       "class": "uk.gov.gchq.gaffer.graph.hook.AddOperationsToChain",
       "before": {
-        "uk.gov.gchq.gaffer.operation.impl.output.ToSet": [
+        "ToSet": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit",
+            "class": "Limit",
             "resultLimit": 100000,
             "truncate": false
           }
         ],
-        "uk.gov.gchq.gaffer.operation.impl.output.ToList": [
+        "ToList": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit",
+            "class": "Limit",
             "resultLimit": 100000,
             "truncate": false
           }
         ],
-        "uk.gov.gchq.gaffer.operation.impl.output.ToArray": [
+        "ToArray": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit",
+            "class": "Limit",
             "resultLimit": 100000,
             "truncate": false
           }
         ],
-        "uk.gov.gchq.gaffer.operation.impl.export.set.ExportToSet": [
+        "set.ExportToSet": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit",
+            "class": "Limit",
             "resultLimit": 100000,
             "truncate": false
           }
         ]
       },
       "after": {
-        "uk.gov.gchq.gaffer.operation.impl.get.GetAllElements": [
+        "GetAllElements": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit",
+            "class": "Limit",
             "resultLimit": 100000,
             "truncate": false
           }
         ],
-        "uk.gov.gchq.gaffer.operation.impl.get.GetElements": [
+        "GetElements": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit",
+            "class": "Limit",
             "resultLimit": 100000,
             "truncate": false
           }
         ],
-        "uk.gov.gchq.gaffer.operation.impl.get.GetAdjacentIds": [
+        "GetAdjacentIds": [
           {
-            "class": "uk.gov.gchq.gaffer.operation.impl.Limit",
+            "class": "Limit",
             "resultLimit": 100000,
             "truncate": false
           }

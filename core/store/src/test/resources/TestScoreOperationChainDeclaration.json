@@ -1,22 +1,22 @@
 {
   "operations": [
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.ScoreOperationChain",
+      "operation": "ScoreOperationChain",
       "handler": {
         "class": "uk.gov.gchq.gaffer.store.operation.handler.ScoreOperationChainHandler",
         "opScores": {
-          "uk.gov.gchq.gaffer.operation.Operation": 1,
-          "uk.gov.gchq.gaffer.operation.impl.generate.GenerateObjects": 0
+          "Operation": 1,
+          "GenerateObjects": 0
         },
         "authScores": {
           "TEST_USER": 4,
           "TEST_USER_ENHANCED": 10
         },
         "scoreResolvers": {
-          "uk.gov.gchq.gaffer.named.operation.NamedOperation": {
+          "NamedOperation": {
             "class": "uk.gov.gchq.gaffer.store.operation.resolver.named.NamedOperationScoreResolver"
           },
-          "uk.gov.gchq.gaffer.operation.impl.add.AddElements": {
+          "AddElements": {
             "class": "uk.gov.gchq.gaffer.store.operation.resolver.named.NamedOperationScoreResolver"
           }
         }

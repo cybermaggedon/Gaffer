@@ -1,13 +1,13 @@
 {
   "types": {
     "vertex.string": {
-      "class": "java.lang.String"
+      "class": "String"
     },
     "timestamp": {
-      "class": "java.lang.Long",
+      "class": "Long",
       "validateFunctions": [
         {
-          "class": "uk.gov.gchq.koryphe.impl.predicate.AgeOff",
+          "class": "AgeOff",
           "ageOffTime": 1000
         }
       ]

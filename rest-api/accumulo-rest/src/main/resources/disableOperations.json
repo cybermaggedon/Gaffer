@@ -1,19 +1,19 @@
 {
   "operations": [
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.SplitStore",
+      "operation": "SplitStore",
       "handler": null
     },
     {
-      "operation": "uk.gov.gchq.gaffer.hdfs.operation.AddElementsFromHdfs",
+      "operation": "AddElementsFromHdfs",
       "handler": null
     },
     {
-      "operation": "uk.gov.gchq.gaffer.hdfs.operation.SampleDataForSplitPoints",
+      "operation": "SampleDataForSplitPoints",
       "handler": null
     },
     {
-      "operation": "uk.gov.gchq.gaffer.accumulostore.operation.hdfs.operation.ImportAccumuloKeyValueFiles",
+      "operation": "ImportAccumuloKeyValueFiles",
       "handler": null
     }
   ]

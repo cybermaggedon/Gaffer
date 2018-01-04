@@ -76,6 +76,6 @@
     }
   },
   "vertexSerialiser": {
-    "class": "uk.gov.gchq.gaffer.serialisation.implementation.StringSerialiser"
+    "class": "StringSerialiser"
   }
 }

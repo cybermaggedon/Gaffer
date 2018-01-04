@@ -1,19 +1,19 @@
 {
   "operations": [
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.add.AddElementsFromSocket",
+      "operation": "AddElementsFromSocket",
       "handler": {
         "class": "uk.gov.gchq.gaffer.flink.operation.handler.AddElementsFromSocketHandler"
       }
     },
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.add.AddElementsFromKafka",
+      "operation": "AddElementsFromKafka",
       "handler": {
         "class": "uk.gov.gchq.gaffer.flink.operation.handler.AddElementsFromKafkaHandler"
       }
     },
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.add.AddElementsFromFile",
+      "operation": "AddElementsFromFile",
       "handler": {
         "class": "uk.gov.gchq.gaffer.flink.operation.handler.AddElementsFromFileHandler"
       }

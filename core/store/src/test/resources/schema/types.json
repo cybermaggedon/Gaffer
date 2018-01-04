@@ -2,50 +2,50 @@
   "types": {
     "id.string": {
       "description": "ID/Vertex type description",
-      "class": "java.lang.String"
+      "class": "String"
     },
     "prop.map": {
       "description": "Map type description",
-      "class": "java.util.LinkedHashMap",
+      "class": "LinkedHashMap",
       "serialiser": {
-        "class": "uk.gov.gchq.gaffer.serialisation.implementation.MapSerialiser",
-        "keySerialiser": "uk.gov.gchq.gaffer.serialisation.implementation.StringSerialiser",
-        "valueSerialiser": "uk.gov.gchq.gaffer.serialisation.implementation.raw.RawLongSerialiser"
+        "class": "MapSerialiser",
+        "keySerialiser": "StringSerialiser",
+        "valueSerialiser": "RawLongSerialiser"
       }
     },
     "directed.true": {
-      "class": "java.lang.Boolean",
+      "class": "Boolean",
       "description": "Directed true type description",
       "validateFunctions": [
         {
-          "class": "uk.gov.gchq.gaffer.function.ExampleFilterFunction"
+          "class": "ExampleFilterFunction"
         }
       ]
     },
     "prop.string": {
       "description": "String type description",
-      "class": "java.lang.String",
+      "class": "String",
       "validateFunctions": [
         {
-          "class": "uk.gov.gchq.gaffer.function.ExampleFilterFunction"
+          "class": "ExampleFilterFunction"
         }
       ],
       "aggregateFunction": {
-        "class": "uk.gov.gchq.gaffer.function.ExampleAggregateFunction"
+        "class": "ExampleAggregateFunction"
       }
     },
     "prop.date": {
       "description": "Date type description",
-      "class": "java.util.Date",
+      "class": "Date",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.gaffer.function.ExampleAggregateFunction"
+        "class": "ExampleAggregateFunction"
       }
     },
     "timestamp": {
       "description": "Timestamp type description",
-      "class": "java.lang.Long",
+      "class": "Long",
       "aggregateFunction": {
-        "class": "uk.gov.gchq.gaffer.function.ExampleAggregateFunction"
+        "class": "ExampleAggregateFunction"
       }
     }
   }

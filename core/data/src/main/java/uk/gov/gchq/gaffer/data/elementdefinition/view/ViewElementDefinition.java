@@ -34,6 +34,7 @@ import uk.gov.gchq.gaffer.data.elementdefinition.ElementDefinition;
 import uk.gov.gchq.gaffer.data.elementdefinition.exception.SchemaException;
 import uk.gov.gchq.gaffer.exception.SerialisationException;
 import uk.gov.gchq.gaffer.jsonserialisation.JSONSerialiser;
+import uk.gov.gchq.koryphe.serialisation.json.SimpleClassNameIdResolver;
 import uk.gov.gchq.koryphe.tuple.function.TupleAdaptedFunction;
 import uk.gov.gchq.koryphe.tuple.predicate.TupleAdaptedPredicate;
 
@@ -344,6 +345,19 @@ public class ViewElementDefinition implements ElementDefinition {
 
         public CHILD_CLASS transientProperty(final String propertyName, final Class<?> clazz) {
             elDef.transientProperties.put(propertyName, clazz);
+            return self();
+        }
+
+        @JsonSetter("transientProperties")
+        public CHILD_CLASS transientPropertiesClassNames(final Map<String, String> transientProperties) throws ClassNotFoundException {
+            if (null == transientProperties) {
+                elDef.transientProperties = new LinkedHashMap<>();
+            } else {
+                elDef.transientProperties = new LinkedHashMap<>(transientProperties.size());
+                for (final Entry<String, String> entry : transientProperties.entrySet()) {
+                    elDef.transientProperties.put(entry.getKey(), Class.forName(SimpleClassNameIdResolver.getClassName(entry.getValue())));
+                }
+            }
             return self();
         }
 

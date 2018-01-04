@@ -1,7 +1,7 @@
 {
   "operations": [
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.export.resultcache.ExportToGafferResultCache",
+      "operation": "resultcache.ExportToGafferResultCache",
       "handler": {
         "class": "uk.gov.gchq.gaffer.operation.export.resultcache.handler.ExportToGafferResultCacheHandler",
         "graphId": "resultCacheGraph",
@@ -10,7 +10,7 @@
       }
     },
     {
-      "operation": "uk.gov.gchq.gaffer.operation.impl.export.resultcache.GetGafferResultCacheExport",
+      "operation": "resultcache.GetGafferResultCacheExport",
       "handler": {
         "class": "uk.gov.gchq.gaffer.operation.export.resultcache.handler.GetGafferResultCacheExportHandler",
         "graphId": "resultCacheGraph",
